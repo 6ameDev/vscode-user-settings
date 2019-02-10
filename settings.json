@@ -1,0 +1,47 @@
+{
+  "files.autoSave": "onFocusChange",
+  "window.zoomLevel": 1,
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "boundary",
+  "editor.wordWrapColumn": 100,
+  "editor.formatOnSave": false, // Causing ; to be added at places, find plugin and fix.
+  "editor.formatOnSaveTimeout": 1500, // Default:750ms. Rubocop takes time.
+  
+  // ********************************************
+  // Vue config (Vetur, ESLint, Prettier)
+  // ********************************************
+  "vetur.validation.template": false,
+  "eslint.validate": [
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "javascript",
+      "autoFix": true
+    }
+  ],
+  "eslint.autoFixOnSave": true,
+  "vetur.completion.useScaffoldSnippets": false,
+  "prettier.semi": false,
+
+  // ********************************************
+  // Ruby config
+  // ********************************************
+  "[ruby]": {
+    "editor.formatOnSave": true
+  },
+  "ruby.format": "rubocop",
+  "ruby.codeCompletion": false,
+  "ruby.intellisense": false,
+  "solargraph.completion": true,
+  "solargraph.definitions": true,
+  "solargraph.rename": true,
+  "solargraph.formatting": true, // No selection, file formatting only. Takes time. Done using Rubocop.
+  "solargraph.references": true
+}
